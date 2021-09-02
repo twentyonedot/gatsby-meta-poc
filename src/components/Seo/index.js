@@ -43,7 +43,7 @@ function Seo({ description, lang, meta, title, postTitle, image, type }) {
         },
         {
           property: `og:type`,
-          content: `${type || "website"}`,
+          content: `${type || 'website'}`,
         },
         {
           name: `twitter:card`,
@@ -66,7 +66,12 @@ function Seo({ description, lang, meta, title, postTitle, image, type }) {
           content: metaImage,
         },
       ].concat(meta)}
-    />
+    >
+      <link
+        rel="canonical"
+        href="https://eloquent-raman-300006.netlify.app"
+      ></link>
+    </Helmet>
   );
 }
 
