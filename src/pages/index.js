@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Seo from '../components/Seo/index';
 
 const IndexPage = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     const head = document.querySelector('head');
     head.setAttribute('prefix', 'og: http://ogp.me/ns#');
   }, []);
