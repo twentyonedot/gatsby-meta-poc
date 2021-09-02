@@ -8,7 +8,7 @@ const IndexPage = () => {
       <Seo
         title="MetaTest1"
         image="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-        type="content"
+        type="article"
       />
       Home
       <Link to="/metatest1">Meta Test1</Link>
