@@ -1,10 +1,23 @@
 import Seo from '../components/Seo/index';
 
-# Mdx Experimental
+<!-- # Mdx Experimental
 
-- This is a sample test for the Mdx Experimental.
-  <Seo
-    title="MetaTest4"
-    image="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    type="article"
-  />
+- This is a sample test for the Mdx Experimental. -->
+
+export const Test1 = () => {
+  React.useEffect(() => {
+    const head = document.querySelector('head');
+    head.setAttribute('prefix', 'og: https://ogp.me/ns#');
+  }, []);
+  return (
+    <>
+      <Seo
+        title="MetaTest4"
+        image="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+        type="article"
+      />
+    </>
+  );
+};
+
+<Test1 />
